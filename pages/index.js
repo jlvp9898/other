@@ -125,11 +125,7 @@ export default function Index() {
             id="video"
             width="560"
             height="315"
-            src={
-              _json.slider.video +
-              "?loop=1&controls=0&autoplay=1&mute=1&playlist=" +
-              _json.slider.video.split("/")[4]
-            }
+            src=""
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen

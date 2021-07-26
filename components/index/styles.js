@@ -16,7 +16,7 @@ export default css`
     padding-top: 5%;
   }
   .hidde-title-mobile, .show-title-mobile{
-    font-family:ArtelyInks !important;
+    font-family: Gotham;
     font-size:35px !important;
     }
   @media (min-width: 992px) {

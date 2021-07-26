@@ -7,7 +7,6 @@ const Banner = ({ children, index }) => {
     height: ${index ? "70vh" : "48vh"};
     font-family: "American";
     padding-top: 5%;
-    text-align:center;
     @media (max-width: 767.98px) {
       height: ${index ? "70vh" : "48vh"};
       display: flex;

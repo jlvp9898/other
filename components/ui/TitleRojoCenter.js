@@ -15,9 +15,9 @@ const TitleRojoCenter = ({ title }) => {
         }
         .title-center h2 {
           color: #f42434;
-          font-size: 2.5rem;
+          font-size: 2rem;
           font-weight: 600;
-          font-family: ArtelyInks;
+          font-family: Gotham;
         }
         .line-doble {
           margin: auto;

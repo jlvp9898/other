@@ -1,7 +1,8 @@
 @font-face {
-  font-family: "andrea";
-  src: url("/static/fonts/Andrea.ttf");
+  font-family: "Gotham";
+  src: url("/static/fonts/Gotham-Bold.ttf");
 }
+
 @font-face {
   font-family: "American";
   src: url("/static/fonts/new/AmericanTypewriterStd-Bold.ttf");
@@ -262,6 +263,8 @@ p.border-text{
   display: inline;
   padding: 5px 20px;
   font-size: 14px !important;
+  
+  line-height: 1.9;
 }
 .m-none{
   margin:0px !important;
@@ -269,6 +272,7 @@ p.border-text{
 .d-block{
   margin-bottom: 30px;
   display: block;
+  text-align: center;
 }
 .arrow-left {
   position: absolute;

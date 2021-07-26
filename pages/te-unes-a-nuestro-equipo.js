@@ -27,7 +27,9 @@ export default function NuestroEquipo() {
       <Layout bg="/static/img/fondos/nuestro-equipo.png">
         <Banner alto={false}>
         <div className="d-block">
+          <h1 className="border-text title-banner wow fadeInUp">
         ¿Te unes a nuestro <TitleResaltado>equipo?</TitleResaltado>
+        </h1>
           </div>
           <div className="d-block">
           <p className="wow fadeInUp border-text">
