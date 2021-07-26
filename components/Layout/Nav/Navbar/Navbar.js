@@ -90,11 +90,13 @@ function Navbar() {
             </li>
 
             <li className="nav-item">
-              <Link href="#">
+              <Link href="/locales">
+                <a>
                 <BotonBanner
                   text="RESERVAR"
                   icon="/static/img/icon-pedido-black.svg"
                 />
+                </a>
               </Link>
             </li>
           </ul>
