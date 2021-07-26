@@ -254,8 +254,8 @@ footer span a div {
 h1.border-text{
   background: rgba(255,0,0,0.5) !important;
   display: inline;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 5px 30px !important;
+  line-height: 1.5;
   
 }
 p.border-text{

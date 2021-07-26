@@ -8,6 +8,7 @@ const Header = styled.header`
   z-index: 0;
   padding-top: calc(180px + 1rem);
   @media screen and (max-width: 991.98px) {
+    padding:120px 0px !important;
     margin-top: 0;
     z-index: 1000;
   }

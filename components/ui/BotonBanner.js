@@ -27,8 +27,7 @@ const Boton = styled.span`
     padding:8px 5px;
 
     &:hover {
-      background-color: transparent;
-      color: #f42434;
+      opacity:0.8;
     }
   }
 `;

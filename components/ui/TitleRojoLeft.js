@@ -13,7 +13,7 @@ const TitleRojoLeft = ({ title, url, nickname, text }) => {
         }
         .title-galeria h2 {
           color: #f42434;
-          font-size: 2.2rem;
+          font-size: 1.7rem;
           font-weight: 600;
           font-family: Gotham;
           margin-top: 0.18rem;
