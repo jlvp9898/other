@@ -20,14 +20,10 @@ export default css`
   a:hover {
     color: #F42434;
   }
-  @media (min-width: 360px) {
+ 
+  @media (max-width: 576px) {
     h1 {
-      font-size: 2.2rem;
-    }
-  }
-  @media (min-width: 576px) {
-    h1 {
-      font-size: 3.2rem;
+      font-size: 1.5rem;
     }
   }
 `;

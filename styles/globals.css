@@ -212,6 +212,7 @@ a {
   transition-property: color;
   transition-duration: 0.3s;
 }
+@media(min-width:500px){
 .btn-red:before {
   content: "";
   position: absolute;
@@ -232,6 +233,7 @@ a {
 }
 .btn-red:hover:before {
   transform: scaleX(1);
+}
 }
 footer.black span {
   color: #f2f2f2 !important;
@@ -254,7 +256,7 @@ footer span a div {
 h1.border-text{
   background: rgba(255,0,0,0.5) !important;
   display: inline;
-  padding: 5px 30px !important;
+  padding: 5px 20px !important;
   line-height: 1.5;
   
 }
@@ -265,6 +267,9 @@ p.border-text{
   font-size: 14px !important;
   
   line-height: 1.9;
+}
+.btn_slider_banner{
+  margin-bottom: 35px;
 }
 .m-none{
   margin:0px !important;
