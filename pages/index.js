@@ -143,7 +143,7 @@ export default function Index() {
         </Banner>
       </Header>
       <div className="container">
-        <Slider_home />
+        <Slider_home api={_json} />
         <Banner_one  />
         <Contenido api={_json} />
         <TitleNegroLeft

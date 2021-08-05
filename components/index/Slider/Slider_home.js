@@ -7,7 +7,7 @@ import api from ".../../../api/api";
 
 
 
-const Slider_home = () => {
+const Slider_home = (props) => {
 
   const [_json, setJson] = useState(api.jsonMenus);
 
@@ -60,6 +60,10 @@ const Slider_home = () => {
       },
     ],
   };
+  console.log(props.api.slider.galeria);
+  if(!props.api.slider.galeria){
+    return "";
+  }
   return (
     <>
       <style jsx>{`
@@ -144,7 +148,7 @@ const Slider_home = () => {
         <div className="slider-interest-ppal wow fadeIn">
           <Slider {...settings}>
 
-          {_json.seccion_one.title.map(
+          {props.api.slider.galeria.map(
             ({ title_menu, subtitle, image1, image }, j) => {
               return (
                 <div className="slide">
