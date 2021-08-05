@@ -20,6 +20,7 @@ import Galery from "../components/ui/Galery/Galery";
 import Banner from "../components/Layout/Banner";
 
 import Domicilio from "../components/index/Domicilio/Domicilio";
+import Banner_one from "../components/index/Banner/banner";
 import api from ".../../../api/api";
 
 export default function Index() {
@@ -136,12 +137,14 @@ export default function Index() {
           ></iframe>
         </div>
         <div className="placa-video"></div>
+        
         <Banner index={true}>
           <BannerIndex api={_json} />
         </Banner>
       </Header>
       <div className="container">
         <Slider_home />
+        <Banner_one  />
         <Contenido api={_json} />
         <TitleNegroLeft
           title={_json.seccion_second.title}
