@@ -16,7 +16,7 @@ const Banner_one = () => {
          min-height: 250px !important;
        }
        .img_1{
-         background:url('/static/img/fondos/home-1.jpg');
+         background:url('/static/img/fondos/home-1.png');
        }
        .img_2{
         background:url('/static/img/fondos/home-2.jpg');

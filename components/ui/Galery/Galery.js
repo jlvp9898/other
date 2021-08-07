@@ -18,6 +18,10 @@ const Galery = (props) => {
 
   }, []);
 
+
+  if(!insta.data){
+    return "";
+  }
   
   return (
     <>
