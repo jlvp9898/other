@@ -9,14 +9,15 @@ const Banner_one = () => {
       <style jsx>{style}</style>
       <style jsx>{`
        .content-image{
-         background-size:cover !important;
+        background-size: 100% !important;
+        background-repeat: no-repeat !important;
          width:100%;
          height:100%;
          background-position: center !important;
          min-height: 250px !important;
        }
        .img_1{
-         background:url('/static/img/fondos/home-1.png');
+         background:url('/static/img/fondos/home-1.jpg');
        }
        .img_2{
         background:url('/static/img/fondos/home-2.jpg');
@@ -38,7 +39,7 @@ const Banner_one = () => {
         <div className="item-3 wow fadeInRight content-image img_3">
       
         </div>
-        <div className="item-4 wow img_4 fadeInRight">
+        <div className="item-4 wow content-image img_4 fadeInRight">
      
            <div>
          
