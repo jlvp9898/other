@@ -1,7 +1,11 @@
 import css from "styled-jsx/css";
 
 export default css`
-  
+  .content-image{
+    width:100%;
+    background-size: cover;
+    border-radius:50%;
+  }
   .grid .columns .item {
     width: 48%;
     display: inline-block;
@@ -20,6 +24,7 @@ export default css`
     cursor: pointer;
   }
   .grid .columns .item .item-img div {
+    border-radius:50%;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -84,6 +89,13 @@ export default css`
     color: #f2f2f2;
   }
   @media(max-width:768px){
+    .grid .columns .item .item-img {
+      float:none;
+      width:auto;
+      max-width:200px;
+      margin:auto;
+      margin-bottom:15px;
+    }
     .grid .columns .item {
       width: 100%;
       display: inline-block;

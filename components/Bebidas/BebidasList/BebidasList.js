@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect} from "react";
 import { FaExpand } from "react-icons/fa";
 
 import TitleRojoLeft from "../../ui/TitleRojoLeft";
@@ -6,6 +6,31 @@ import style from "./style";
 import api from ".../../../api/api";
 
 const BebidasList = ({ onImg, datos }) => {
+
+  useEffect(async () => {
+    
+    setTimeout(function(){
+    var img = document.querySelectorAll(".content-image"); 
+    var i = 0;
+    for (i = 0; i < img.length; i++) {
+      var ancho = img[i].offsetWidth;
+      
+      img[i].style.height=ancho+"px";
+    }
+  }, 1000);
+
+  setTimeout(function(){
+    var img = document.querySelectorAll(".content-image"); 
+    var i = 0;
+    for (i = 0; i < img.length; i++) {
+      var ancho = img[i].offsetWidth;
+      
+      img[i].style.height=ancho+"px";
+    }
+  }, 3000);
+
+  }, [0]);
+
   return (
     <>
       <style jsx>{style}</style>
@@ -17,13 +42,10 @@ const BebidasList = ({ onImg, datos }) => {
               return (
                 <div className="item" key={`${name_pl}-${j}`}>
                   <div className="item-img wow fadeIn">
-                    <img
-                      src={api.urlBackPanel()+image}
-                      alt=""
-                      onClick={() => {
+                    <section className="content-image" style={{backgroundImage: `url("`+api.urlBackPanel()+image+`")` }}   onClick={() => {
                         onImg(api.urlBackPanel()+image);
-                      }}
-                    />
+                      }}></section>
+                    
                     <div
                       onClick={() => {
                         onImg(api.urlBackPanel()+image);

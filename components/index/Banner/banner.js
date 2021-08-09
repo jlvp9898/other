@@ -1,20 +1,32 @@
-import React from "react";
+import React,{useMemo} from "react";
 import Link from "next/link";
 import Image from "next/image";
 import style from "./style";
 
 const Banner_one = () => {
+
+  useMemo(async () => {
+   
+    var img = document.querySelectorAll(".content-image"); 
+    var i = 0;
+    for (i = 0; i < img.length; i++) {
+      var ancho = img[i].offsetWidth;
+      
+      img[i].style.height=ancho+"px";
+    }
+    
+  }, []);
+
   return (
     <>
       <style jsx>{style}</style>
       <style jsx>{`
        .content-image{
-        background-size: 100% !important;
+        background-size: 100% 100% !important;
         background-repeat: no-repeat !important;
          width:100%;
          height:100%;
          background-position: center !important;
-         min-height: 250px !important;
        }
        .img_1{
          background:url('/static/img/fondos/home-1.jpg');
