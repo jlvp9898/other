@@ -73,7 +73,7 @@ const BebidasList = ({ onImg, datos }) => {
                       </div>
                     </div>
                     <div className="item-description wow fadeInUp">
-                      <p dangerouslySetInnerHTML={{__html: descripcion_pl}}></p>
+                      <p className="text-pre" dangerouslySetInnerHTML={{__html: descripcion_pl}}></p>
                      
                     </div>
                   </div>

@@ -6,6 +6,9 @@ export default css`
     background-size: cover;
     border-radius:50%;
   }
+  .text-pre{
+    white-space: pre-wrap;
+  }
   .grid .columns .item {
     width: 48%;
     display: inline-block;
