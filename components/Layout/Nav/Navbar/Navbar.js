@@ -88,6 +88,12 @@ function Navbar() {
             <li className="star-icon">
               <FaStar />
             </li>
+            <li className="nav-item">
+              <Link href="/te-unes-a-nuestro-equipo">
+                <a className="nav-links">RRHH</a>
+              </Link>
+            </li>
+
             
             <li className="nav-item">
               <Link href="/locales">
