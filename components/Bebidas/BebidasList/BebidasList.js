@@ -29,6 +29,16 @@ const BebidasList = ({ onImg, datos }) => {
     }
   }, 3000);
 
+  setTimeout(function(){
+    var img = document.querySelectorAll(".content-image"); 
+    var i = 0;
+    for (i = 0; i < img.length; i++) {
+      var ancho = img[i].offsetWidth;
+      
+      img[i].style.height=ancho+"px";
+    }
+  }, 10000);
+
   }, [0]);
 
   return (
@@ -63,7 +73,7 @@ const BebidasList = ({ onImg, datos }) => {
                       </div>
                     </div>
                     <div className="item-description wow fadeInUp">
-                      <p>{descripcion_pl}</p>
+                      <p dangerouslySetInnerHTML={{__html: descripcion_pl}}></p>
                      
                     </div>
                   </div>
