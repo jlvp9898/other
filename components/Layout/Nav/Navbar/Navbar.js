@@ -88,7 +88,7 @@ function Navbar() {
             <li className="star-icon">
               <FaStar />
             </li>
-
+            
             <li className="nav-item">
               <Link href="/locales">
                 <a>
@@ -99,6 +99,7 @@ function Navbar() {
                 </a>
               </Link>
             </li>
+         
           </ul>
         </div>
       </nav>

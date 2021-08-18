@@ -69,6 +69,9 @@ export default function Index() {
           left: 0;
           z-index: -1;
         }
+        .min-height{
+          min-height:250px;
+        }
         .placa-video {
           position: absolute;
           overflow: hidden;
@@ -143,7 +146,9 @@ export default function Index() {
         </Banner>
       </Header>
       <div className="container">
+        <div className="min-height">
         <Slider_home api={_json} />
+        </div>
         <Banner_one  />
         <Contenido api={_json} />
         <TitleNegroLeft

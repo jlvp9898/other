@@ -1,11 +1,11 @@
-import React,{useMemo} from "react";
+import React,{useEffect} from "react";
 import Link from "next/link";
 import Image from "next/image";
 import style from "./style";
 
 const Banner_one = () => {
 
-  useMemo(async () => {
+  useEffect(async () => {
    
     var img = document.querySelectorAll(".content-image"); 
     var i = 0;

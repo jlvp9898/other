@@ -102,7 +102,7 @@ const ReservarMesa = () => {
     cookies.set('BannerReserva',click, { path: '/' });
   };
 
-
+ 
   return (
     <>
       <VentanaPeq
