@@ -85,6 +85,11 @@ function Navbar() {
                 <a className="nav-links">Locales</a>
               </Link>
             </li>
+            <li className="nav-item">
+              <Link href="/te-unes-a-nuestro-equipo">
+                <a className="nav-links">Únete al equipo</a>
+              </Link>
+            </li>
           </ul>
 
           <div className={submenu ? "nav-menu-menu active" : "nav-menu-menu"}>
