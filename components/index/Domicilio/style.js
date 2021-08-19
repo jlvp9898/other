@@ -21,7 +21,6 @@ export default css`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 33px 20px -11px rgba(128, 128, 128, 0.65);
     transition: all 0.5s;
     cursor: pointer;
   }

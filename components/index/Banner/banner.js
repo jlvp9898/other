@@ -29,16 +29,16 @@ const Banner_one = () => {
          background-position: center !important;
        }
        .img_1{
-         background:url('/static/img/fondos/home-1.jpg');
+         background:url('/static/img/fondos/home-1.png');
        }
        .img_2{
-        background:url('/static/img/fondos/home-2.jpg');
+        background:url('/static/img/fondos/home-2.png');
       }
       .img_3{
-        background:url('/static/img/fondos/home-3.jpg');
+        background:url('/static/img/fondos/home-3.png');
       }
       .img_4{
-        background:url('/static/img/fondos/home-4.jpg');
+        background:url('/static/img/fondos/home-4.png');
       }
       `}</style>
       <div className="domicilio-ppal">

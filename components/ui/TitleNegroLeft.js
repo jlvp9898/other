@@ -12,7 +12,7 @@ const TitleNegroLeft = ({ title, url, nickname, text }) => {
           max-width: 50%;
         }
         .title-galeria h2 {
-          color: #0c0c0c;
+          color: #cabca1;
           margin: 0.8rem 0;
           border-bottom: 4px solid #f42434;
           display: inline-block;
