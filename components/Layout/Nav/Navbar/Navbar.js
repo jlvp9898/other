@@ -27,6 +27,9 @@ function Navbar() {
     <>
       <style jsx>{styles}</style>
       <style jsx global>{`
+        .min-width{
+          min-width: 140px;
+        }
         header svg {
           color: #fff;
         }
@@ -88,9 +91,9 @@ function Navbar() {
             <li className="star-icon">
               <FaStar />
             </li>
-            <li className="nav-item">
+            <li className="nav-item min-width">
               <Link href="/te-unes-a-nuestro-equipo">
-                <a className="nav-links">RRHH</a>
+                <a className="nav-links">Unete al equipo</a>
               </Link>
             </li>
 
