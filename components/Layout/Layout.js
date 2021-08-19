@@ -45,7 +45,7 @@ const Layout = ({ children, bg = "static/img/fondos/img2.png", index = true }) =
           top: 0px;
         }
         .fondo {
-          background-color: #ffffff;
+          background-color: #000;
           padding: 3%;
           position: relative;
           top: 0;
@@ -60,11 +60,6 @@ const Layout = ({ children, bg = "static/img/fondos/img2.png", index = true }) =
       {isMobile ? <NavbarMobile /> : <Navbar />}
       <Header style={{ backgroundImage: `url(${bg})` }}>{children[0]}</Header>
       <main
-        style={{
-          backgroundImage: "url(static/img/fondos/textura.png)",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
       >
         <div className="container fondo">
           {children.map((c, i) => i > 0 && c)}

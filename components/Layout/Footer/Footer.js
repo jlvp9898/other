@@ -7,7 +7,7 @@ const Footer = ({ theme }) => {
   return (
     <>
       <style jsx>{style}</style>
-      <footer className={theme ? "black" : "white"}>
+      <footer className="black">
         <div className="container">
           <div className="grid">
             <div className="columns">

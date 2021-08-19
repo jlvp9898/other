@@ -55,7 +55,7 @@ export default css`
     height: 100%;
     width: 100%;
     text-decoration: none;
-    color: #fff;
+    color: #c3ba98;
 
     padding: 2px 9px;
     text-transform: initial;

@@ -25,7 +25,7 @@ const TitleRojoLeft = ({ title, url, nickname, text }) => {
           color: #606060;
         }
         .text-galeria {
-          color: #606060;
+          color: #c3ba98;
           width: 50%;
           margin-top: 0.5rem;
           padding-bottom: 5%;

@@ -33,7 +33,7 @@ export default css`
     height: 100%;
     top: 0;
     left: 0;
-    color: #f2f2f2;
+    color: #c3ba98;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,14 +52,14 @@ export default css`
     font-family: "BebasNeue";
     font-weight: 600;
     font-size: 1.3rem;
-    color: #2d2c2c;
+    color: #c3ba98;
   }
   .grid .columns .item h3:hover {
     color: #f42434;
   }
   .grid .columns .item p {
     margin: 0;
-    color: #808080;
+    color: #c3ba98;
     font-size: 0.8rem;
   }
   .grid .columns .item .item-content {

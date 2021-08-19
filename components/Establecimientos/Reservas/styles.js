@@ -62,19 +62,19 @@ export default css`
     background-size: 120% 120%;
   }
   .grid .columns .item h4 {
-    color: #f2f2f2;
+    color: #c3ba98;
     margin: 0;
   }
   .grid .columns .item p {
     margin: 0;
-    color: #f2f2f2;
+    color: #c3ba98;
   }
   .grid .columns .item .item-content {
     padding-left: 10px;
   }
   .grid .columns .item .btn-reserva {
     display: inline-block;
-    color: #f2f2f2;
+    color: #c3ba98;
     text-align: center;
     text-decoration: none;
     vertical-align: middle;

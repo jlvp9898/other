@@ -39,7 +39,7 @@ export default css`
     margin-bottom: 1rem;
   }
   .text-equipo p {
-    color: #606060;
+    color: #c3ba98;
     margin-bottom: 0.5rem;
   }
   .italica {

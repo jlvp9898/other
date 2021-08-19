@@ -48,17 +48,17 @@ export default css`
     align-items: start;
     padding: 1.5rem;
     font-size: 0.8rem;
-    background-color: #242424;
+    background-color: #c3ba98;
   }
   .item-4 h2 {
     font-family: "Roboto-Black";
     margin-bottom: 1rem;
-    color: #f2f2f2;
+    color: #222;
     font-size: 1.7rem;
   }
   .item-4 p {
     margin-bottom: 3rem;
-    color: #d4d4d4;
+    color: #222;
   }
   .img-domicilio {
     width: 100%;

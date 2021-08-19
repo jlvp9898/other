@@ -27,7 +27,7 @@ const TitleNegroLeft = ({ title, url, nickname, text }) => {
           color: #f42434;
         }
         .text-galeria {
-          color: #606060;
+          color: #c3ba98;
           margin: 0.1rem 0;
           flex: 50%;
           max-width: 50%;

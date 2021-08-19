@@ -39,12 +39,12 @@ export default css`
   .title-cards-map {
     font-family: "BebasNeue";
     font-weight: bold;
-    color: #ffffff;
+    color: #c3ba98;
     font-size: 1.1rem;
   }
   .text-cards-map {
     font-size: 0.8rem;
-    color: #ffffff;
+    color: #c3ba98;
     margin-bottom: 1rem;
   }
   .reservar-map {

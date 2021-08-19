@@ -93,7 +93,7 @@ function Navbar() {
             </li>
             <li className="nav-item min-width">
               <Link href="/te-unes-a-nuestro-equipo">
-                <a className="nav-links">Unete al equipo</a>
+                <a className="nav-links">Únete al equipo</a>
               </Link>
             </li>
 

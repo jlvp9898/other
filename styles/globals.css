@@ -66,6 +66,10 @@ body {
 body {
   font-family: "Montserrat-Medium", sans-serif;
   font-size: 16px;
+  background: #000;
+}
+body p{
+  color: #c3ba98;
 }
 .menu-fixed{
   z-index: 100000 !important;

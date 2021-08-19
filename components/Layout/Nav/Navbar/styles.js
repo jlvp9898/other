@@ -41,7 +41,7 @@ export default css`
     justify-content: start;
   }
   .star-icon {
-    color: #fff;
+    color: #c3ba98;
   }
   .nav-menu-menu {
     display: none;
@@ -61,7 +61,7 @@ export default css`
   }
 
   .nav-links {
-    color: white;
+    color: #c3ba98;
     text-decoration: none;
     padding: 0.5rem 0rem;
     position: relative;

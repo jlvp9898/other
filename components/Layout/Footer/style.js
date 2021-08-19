@@ -12,16 +12,16 @@ export default css`
     color: #0c0c0c;
   }
   footer.white a {
-    color: #606060;
+    color: #c3ba98;
   }
   footer.black {
     background-image: url(static/img/fondos/img3.png);
   }
   footer.black h3 {
-    color: #fff;
+    color: #c3ba98;
   }
   footer.black a {
-    color: #f2f2f2;
+    color: #c3ba98;
   }
   footer .grid {
     display: grid;
