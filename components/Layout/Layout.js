@@ -45,7 +45,7 @@ const Layout = ({ children, bg = "static/img/fondos/img2.png", index = true }) =
           top: 0px;
         }
         .fondo {
-          
+          background-color: #0c0c0c;
           padding: 3%;
           position: relative;
           top: 0;
