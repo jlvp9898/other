@@ -11,7 +11,7 @@ const Galery = (props) => {
   const [insta, setInsta] = useState(api.jsonApiInstagram);
   useMemo(async () => {
   
-    fetch("https://graph.instagram.com/me/media?fields=media_url,caption,media_type,thumbnail_url&access_token=IGQVJWZAnBKSUpKTXFnZAEV3dVpId3pwNUc3Mk1LdVI1VTRFbEFUa2hOaFJ6VTRzRzlzZAVo0VGVGNWlLZAVIzOU9Sc1pOUlZAuOW1QSVl6NnhZAdlFHdlVZATFRzY1o5RjRBWG43U0J3NEFEc19uVENuYVhkcwZDZD", { method: 'GET'})
+    fetch("https://graph.instagram.com/me/media?fields=media_url,caption,media_type,thumbnail_url&access_token=IGQVJVZA2Ytbzh6VVdaQzVmUWU0M01PRDliUmxwVVhObXpOLWhLd3Bsb2l5NW9mbzVSTUlqME9GRVh2Y3FRcGtVODNKdUNxNHpzcnRsX09tY3lTV1BsVmV4ckdKY3NpTWVpV29EZAHhOVktwR1BHdTVjcwZDZD", { method: 'GET'})
     .then(response => response.json())
     .then(data => setInsta(data));
 
