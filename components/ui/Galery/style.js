@@ -127,7 +127,7 @@ export const Local = css`
     height: 0;
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
-    border-left: 20px solid #ffffff;
+    border-left: 20px solid #000;
     position: absolute;
     top: 44%;
     right: -20px;
@@ -139,7 +139,7 @@ export const Local = css`
     height: 0;
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
-    border-right: 20px solid #ffffff;
+    border-right: 20px solid #000;
     position: absolute;
     top: 44%;
     left: -20px;
