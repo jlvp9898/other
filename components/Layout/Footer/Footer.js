@@ -12,6 +12,7 @@ const Footer = ({ theme }) => {
   const cookies = new Cookies();
 
   const lang = cookies.get('lang');
+  
  
   const handleChange = (e) => {
     
@@ -26,6 +27,9 @@ useMemo(async () => {
     .then((response) => response.json())
     .then((data) => setJson(data));
 }, []);
+
+
+
   return (
     <>
       <style jsx>{style}</style>
@@ -48,9 +52,9 @@ useMemo(async () => {
               <select className="select-language" onChange={handleChange} value={lang}>
               {_json.map(
                 ({ language, code, image}, j) => {
-               
+              
                   return (
-                    <option value={code}>{language}</option>
+                    <option value={code} key={j}>{language}</option>
                   );
                 }
               )}

@@ -441,9 +441,14 @@ const jsonApiRedes= () => {
 const jsonApiLang= () => {
     return (
         [{
-            "language":"",
-            "code":"",
-            "image":""
+            "language":"Español",
+            "code":"ES",
+            "image":"url"
+        },
+        {
+            "language":"Español",
+            "code":"ES",
+            "image":"url"
         }]
     );
 };
