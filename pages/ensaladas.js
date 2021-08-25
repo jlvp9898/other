@@ -9,6 +9,7 @@ import GalleryModal from "../components/Bebidas/GalleryModal/GalleryModal";
 import style from "../styles/banner";
 import { getAllMenusIds, getMenuData } from "../lib/menu";
 import api from ".../../../api/api";
+import Cookies from 'universal-cookie';
 export default function Ensaladas({ data, banner }) {
 
   const [_json, setJson] = useState(api.jsonMenus);
@@ -34,7 +35,9 @@ export default function Ensaladas({ data, banner }) {
   useMemo(async () => {
   
     const headers = api.head();
-    fetch(api.urlApi("data_salads"), { method: 'GET', headers})
+    const cookies = new Cookies();
+    const lang = cookies.get('lang');
+    fetch(api.urlApi("data_salads&lang="+lang), { method: 'GET', headers})
     .then(response => response.json())
     .then(data => setJson(data));
 

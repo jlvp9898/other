@@ -2,7 +2,7 @@ import React from "react";
 import LineDoble from "../ui/LineDoble";
 import style from "../../styles/textosLargos";
 
-export const Cookies = (props) => {
+export const Cookie = (props) => {
   return (
     <>
       <style jsx>{style}</style>

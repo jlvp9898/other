@@ -10,13 +10,16 @@ import Galery from "../components/ui/Galery/Galery";
 import banner from "../styles/banner";
 import style from "../styles/textosLargos";
 import api from ".../../../api/api";
+import Cookies from 'universal-cookie';
 export default function Contacto() {
   const [_json, setJson] = useState(api.jsonApiContact);
   const regex = /(<([^>]+)>)/ig;
   useMemo(async () => {
   
     const headers = api.head();
-    fetch(api.urlApi("data_contact"), { method: 'GET', headers})
+    const cookies = new Cookies();
+    const lang = cookies.get('lang');
+    fetch(api.urlApi("data_contact&lang="+lang), { method: 'GET', headers})
     .then(response => response.json())
     .then(data => setJson(data));
 

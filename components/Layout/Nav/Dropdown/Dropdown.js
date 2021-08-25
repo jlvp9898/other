@@ -11,10 +11,12 @@ function Dropdown({ menu_items }) {
   return (
     <>
       <style jsx>{styles}</style>
+   
       <ul
         onClick={handleClick}
         className={click ? "dropdown-menu clicked" : "dropdown-menu"}
       >
+        <div className="popover-relleno"></div>
         <div className="popover-arrow"></div>
         {menu_items.map((item, index) => {
           return (
@@ -28,6 +30,7 @@ function Dropdown({ menu_items }) {
           );
         })}
       </ul>
+      
     </>
   );
 }

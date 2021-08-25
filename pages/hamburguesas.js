@@ -8,6 +8,7 @@ import BebidasList from "../components/Bebidas/BebidasList/BebidasList";
 import GalleryModal from "../components/Bebidas/GalleryModal/GalleryModal";
 import style from "../styles/banner";
 import api from ".../../../api/api";
+import Cookies from 'universal-cookie';
 import { getAllMenusIds, getMenuData } from "../lib/menu";
 
 export default function Hamburguesas({ data, banner }) {
@@ -34,7 +35,9 @@ export default function Hamburguesas({ data, banner }) {
   useMemo(async () => {
   
     const headers = api.head();
-    fetch(api.urlApi("data_burger"), { method: 'GET', headers})
+    const cookies = new Cookies();
+    const lang = cookies.get('lang');
+    fetch(api.urlApi("data_burger&lang="+lang), { method: 'GET', headers})
     .then(response => response.json())
     .then(data => setJson(data));
 

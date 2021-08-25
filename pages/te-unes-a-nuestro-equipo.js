@@ -8,12 +8,15 @@ import Banner from "../components/Layout/Banner";
 import TitleResaltado from "../components/ui/TitleResaltado";
 import style from "../styles/banner";
 import api from ".../../../api/api";
+import Cookies from 'universal-cookie';
 export default function NuestroEquipo() {
   const [_json, setJson] = useState(api.jsonApiHome);
   useMemo(async () => {
   
     const headers = api.head();
-    fetch(api.urlApi("data_home"), { method: 'GET', headers})
+    const cookies = new Cookies();
+    const lang = cookies.get('lang');
+    fetch(api.urlApi("data_home&lang="+lang), { method: 'GET', headers})
     .then(response => response.json())
     .then(data => setJson(data));
 

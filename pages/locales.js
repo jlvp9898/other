@@ -8,14 +8,16 @@ import TitleRojoLeft from "../components/ui/TitleRojoLeft";
 import Galery from "../components/ui/Galery/Galery";
 import style from "../styles/banner";
 import api from ".../../../api/api";
-
+import Cookies from 'universal-cookie';
 export default function Establecimientos() {
   const [_json, setJson] = useState(api.jsonApiLocale);
   const regex = /(<([^>]+)>)/ig;
   useMemo(async () => {
   
     const headers = api.head();
-    fetch(api.urlApi("data_local"), { method: 'GET', headers})
+    const cookies = new Cookies();
+    const lang = cookies.get('lang');
+    fetch(api.urlApi("data_local&lang="+lang), { method: 'GET', headers})
     .then(response => response.json())
     .then(data => setJson(data));
 

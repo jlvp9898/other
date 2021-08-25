@@ -438,6 +438,16 @@ const jsonApiRedes= () => {
     );
 };
 
+const jsonApiLang= () => {
+    return (
+        [{
+            "language":"",
+            "code":"",
+            "image":""
+        }]
+    );
+};
+
 const jsonApiInstagram= () => {
     return (
         {
@@ -518,7 +528,7 @@ const jsonApiInstagram= () => {
          }
     );
 };
-export default {head , urlApi, jsonApiHome, jsonApiLocale, jsonApiContact, jsonApiLegalWarning, jsonApiTerms, jsonApiCookies, urlBackPanel, jsonApiRedes, jsonMenus, jsonApiInstagram};
+export default {head , urlApi, jsonApiHome, jsonApiLang, jsonApiLocale, jsonApiContact, jsonApiLegalWarning, jsonApiTerms, jsonApiCookies, urlBackPanel, jsonApiRedes, jsonMenus, jsonApiInstagram};
 
 
 

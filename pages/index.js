@@ -22,14 +22,12 @@ import Banner from "../components/Layout/Banner";
 import Domicilio from "../components/index/Domicilio/Domicilio";
 import Banner_one from "../components/index/Banner/banner";
 import api from ".../../../api/api";
+import Cookies from 'universal-cookie';
 
 export default function Index() {
   const [_json, setJson] = useState(api.jsonApiHome);
-  const [scrollY, setScrollY] = useState(0);
+ 
 
-  function logit() {
-    setScrollY(window.pageYOffset);
-  }
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -39,15 +37,20 @@ export default function Index() {
       live: false,
     }).init();
 
-    function watchScroll() {
-      window.addEventListener("scroll", logit);
-    }
+  
     //watchScroll();
   }, []);
 
   useMemo(async () => {
     const headers = api.head();
-    fetch(api.urlApi("data_home"), { method: "GET", headers })
+
+    
+  const cookies = new Cookies();
+
+  const lang = cookies.get('lang');
+
+
+    fetch(api.urlApi("data_home&lang="+lang), { method: "GET", headers })
       .then((response) => response.json())
       .then((data) => setJson(data));
   }, []);
@@ -55,7 +58,7 @@ export default function Index() {
   const { isMobile } = useMenu();
   const regex = /(<([^>]+)>)/gi;
 
-  let menuFixed = "menu-fixe";
+ 
 
   return (
     <>
@@ -119,7 +122,6 @@ export default function Index() {
       <Redes />
       {isMobile ? <NavbarMobile /> : <Navbar />}
       <Header
-        className={menuFixed}
         style={{
           backgroundImage: `url(` + api.urlBackPanel() + _json.slider.img + `)`,
         }}

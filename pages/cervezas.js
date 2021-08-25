@@ -9,6 +9,7 @@ import GalleryModal from "../components/Bebidas/GalleryModal/GalleryModal";
 import style from "../styles/banner";
 import { getAllMenusIds, getMenuData } from "../lib/menu";
 import api from ".../../../api/api";
+import Cookies from 'universal-cookie';
 export default function Cervezas({ data, banner }) {
   const [_json, setJson] = useState(api.jsonMenus);
   const settings = {
@@ -32,7 +33,9 @@ export default function Cervezas({ data, banner }) {
   useMemo(async () => {
   
     const headers = api.head();
-    fetch(api.urlApi("data_beers"), { method: 'GET', headers})
+    const cookies = new Cookies();
+    const lang = cookies.get('lang');
+    fetch(api.urlApi("data_beers&lang="+lang), { method: 'GET', headers})
     .then(response => response.json())
     .then(data => setJson(data));
 

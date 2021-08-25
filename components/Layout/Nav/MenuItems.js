@@ -73,7 +73,7 @@ export const MenuItems = [
     cName: "dropdown-link",
   },
   {
-    title: "Carta y combo",
+    title: "Carta y combos",
     path: "/menus",
     cName: "dropdown-link",
   },

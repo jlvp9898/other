@@ -65,13 +65,18 @@ function Navbar() {
               onMouseEnter={() => {
                 MenuEntra("menu");
               }}
+              
               onMouseLeave={() => {
                 MenuSale("menu");
               }}
+              
             >
+
               <span className="nav-links">
+              
                 Menú <FaCaretDown />
                 {menu && <Dropdown menu_items={MenuItems} />}
+               
               </span>
             </li>
           </ul>

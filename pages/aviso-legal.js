@@ -8,6 +8,7 @@ import banner from "../styles/banner";
 import style from "../styles/textosLargos";
 import { Aviso } from "../components/Aviso/Aviso";
 import api from ".../../../api/api";
+import Cookies from 'universal-cookie';
 
 export default function AvisoLegal() {
   const [_json, setJson] = useState(api.jsonApiLegalWarning);
@@ -15,7 +16,9 @@ export default function AvisoLegal() {
   useMemo(async () => {
   
     const headers = api.head();
-    fetch(api.urlApi("data_legal_warning"), { method: 'GET', headers})
+    const cookies = new Cookies();
+    const lang = cookies.get('lang');
+    fetch(api.urlApi("data_legal_warning&lang="+lang), { method: 'GET', headers})
     .then(response => response.json())
     .then(data => setJson(data));
 

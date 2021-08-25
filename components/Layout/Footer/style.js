@@ -5,6 +5,12 @@ export default css`
     padding-top: 50px;
     position: relative;
   }
+  .select-language{
+    padding: 6px 20px;
+    font-size: 15px;
+    border-radius: 15px;
+    background: #c3ba98;
+  }
   footer.white {
     background-color: #ffffff;
   }

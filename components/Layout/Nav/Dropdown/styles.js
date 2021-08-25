@@ -11,6 +11,13 @@ export default css`
     padding: 20px;
     border-top: 4px solid #c4bb9e;
   }
+  .popover-relleno{
+    width:100%;
+    height:50px;
+   position:absolute;
+   top:-40px;
+   left:0px;
+  }
 
   .popover-arrow {
     position: absolute;

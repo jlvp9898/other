@@ -3,6 +3,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles/globals.css";
 import "../styles/effects.css";
+import Cookies from 'universal-cookie';
+
+const cookies = new Cookies();
+
+  const lang = cookies.get('lang');
+  
+  if(lang == undefined){
+    cookies.set('lang',"ES", { path: '/' });
+  }
+
 // import { SwitchTransition, CSSTransition } from "react-transition-group";
 
 // export default function MyApp({ Component, pageProps, router }) {

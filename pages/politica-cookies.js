@@ -6,8 +6,8 @@ import TitleRojoLeft from "../components/ui/TitleRojoLeft";
 import Galery from "../components/ui/Galery/Galery";
 import banner from "../styles/banner";
 import api from ".../../../api/api";
-import { Cookies } from "../components/Politicas/Cookies";
-
+import { Cookie } from "../components/Politicas/Cookies";
+import Cookies from 'universal-cookie';
 
 export default function PoliticaCookies() {
   const [_json, setJson] = useState(api.jsonApiCookies);
@@ -15,7 +15,9 @@ export default function PoliticaCookies() {
   useMemo(async () => {
   
     const headers = api.head();
-    fetch(api.urlApi("data_cookies"), { method: 'GET', headers})
+    const cookies = new Cookies();
+    const lang = cookies.get('lang');
+    fetch(api.urlApi("data_cookies&lang="+lang), { method: 'GET', headers})
     .then(response => response.json())
     .then(data => setJson(data));
 
@@ -37,7 +39,7 @@ export default function PoliticaCookies() {
           </p>
           </div>
         </Banner>
-        <Cookies api={_json} />
+        <Cookie api={_json} />
         <TitleRojoLeft
           title={_json.seccion_second.title}
           url={_json.seccion_second.url}

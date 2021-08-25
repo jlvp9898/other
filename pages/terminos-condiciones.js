@@ -8,14 +8,16 @@ import TitleRojoLeft from "../components/ui/TitleRojoLeft";
 import banner from "../styles/banner";
 import style from "../styles/textosLargos";
 import api from ".../../../api/api";
-
+import Cookies from 'universal-cookie';
 export default function TerminosCondiciones() {
   const [_json, setJson] = useState(api.jsonApiTerms);
   const regex = /(<([^>]+)>)/ig;
   useMemo(async () => {
   
     const headers = api.head();
-    fetch(api.urlApi("data_terms"), { method: 'GET', headers})
+    const cookies = new Cookies();
+    const lang = cookies.get('lang');
+    fetch(api.urlApi("data_terms&lang="+lang), { method: 'GET', headers})
     .then(response => response.json())
     .then(data => setJson(data));
 
