@@ -11,6 +11,7 @@ export default css`
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
+
   @media (max-width: 767.98px) {
     .btn-banner {
       display: flex;

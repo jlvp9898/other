@@ -108,7 +108,7 @@ function Navbar() {
                 <a>
                 <BotonBanner
                   text="RESERVAR"
-                  icon="/static/img/icon-pedido-black.svg"
+                  icon="/static/img/hamburger-solid.svg"
                 />
                 </a>
               </Link>

@@ -22,19 +22,19 @@ export default css`
   .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 100vw);
+    grid-template-rows: auto;
     grid-gap: 10px;
   }
   @media (min-width: 768px) {
     .grid {
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 50vw);
+      grid-template-rows: auto;
     }
   }
   @media (min-width: 1200px) {
     .grid {
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: 25vw;
+      grid-template-rows: auto;
     }
   }
   .grid .columns {
@@ -47,12 +47,11 @@ export default css`
     max-width: 100%;
   }
   .grid .columns .item {
-    position: absolute;
-    bottom: 40px;
+  
   }
   .grid .columns .item-img {
     width: 100%;
-    height: 100%;
+    height: 350px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -71,6 +70,8 @@ export default css`
   }
   .grid .columns .item .item-content {
     padding-left: 10px;
+    margin-top:20px;
+    margin-bottom:10px;
   }
   .grid .columns .item .btn-reserva {
     display: inline-block;

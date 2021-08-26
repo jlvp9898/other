@@ -50,7 +50,8 @@ const Container = styled.span`
     border: 2px solid;
   }
   & img {
-    width: 40px;
+    height: 40px;
+    padding: 11px;
   }
 `;
 

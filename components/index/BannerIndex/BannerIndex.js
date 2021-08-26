@@ -16,7 +16,7 @@ const BannerIndex = (props) => {
       live: false,
     }).init();
 
- console.log(props.api);
+
   }, []);
   if(props.api.slider.title == ""){
     return ("");
@@ -35,7 +35,7 @@ const BannerIndex = (props) => {
               <a className="nav-links-mobile">
                 <BotonBanner
                   text={props.api.slider.btn1_title}
-                  icon="/static/img/icon-reservar-black.svg"
+                  icon="/static/img/hamburger-solid.svg"
                 />
               </a>
             </Link>
@@ -47,7 +47,7 @@ const BannerIndex = (props) => {
               <a className="nav-links-mobile">
                 <BotonBanner
                   text={props.api.slider.btn2_title}
-                  icon="/static/img/icon-pedido-black.svg"
+                  icon="/static/img/shopping-bag-solid.svg"
                 />
               </a>
             </Link>
