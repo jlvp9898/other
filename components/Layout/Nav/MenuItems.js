@@ -69,7 +69,7 @@ export const MenuItems = [
   },
   {
     title: "Bebidas",
-    path: "/bebidas",
+    path: "/zumos-y-cocktails",
     cName: "dropdown-link",
   },
   {
