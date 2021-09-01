@@ -1,7 +1,7 @@
 {
   "redirects": [
     { 
-      "source": "/demo2",
+      "source": "/wp-content/uploads/2021/01/GM_200gr_CartaComidasA5_Ene21.pdf",
       "destination": "https://www.mssistemas.es", 
       "statusCode": 302
     }
