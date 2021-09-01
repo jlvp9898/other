@@ -27,7 +27,7 @@ export default function NuestroEquipo() {
         <title>Unete a nuestro equipo</title>
       </Head>
       <style jsx>{style}</style>
-      <Layout bg="/static/img/fondos/nuestro-equipo.png">
+      <Layout bg="/static/img/fondos/nuestro-equipo.jpg">
         <Banner alto={false}>
         <div className="d-block">
           <h1 className="border-text title-banner wow fadeInUp">
