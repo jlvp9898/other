@@ -5,7 +5,8 @@
     {"source": "/ruizdealda/takeaway","destination": "https://www.200gramos.com", "statusCode": 302 },
     {"source": "/cairasco/takeaway","destination": "https://www.200gramos.com", "statusCode": 302 },
     {"source": "/cicer/takeaway","destination": "https://www.200gramos.com", "statusCode": 302 },
-    {"source": "/sanfernando/takeaway","destination": "https://www.200gramos.com", "statusCode": 302 }
+    {"source": "/sanfernando/takeaway","destination": "https://www.200gramos.com", "statusCode": 302 },
+    {"source": "/wp-content/uploads/2021/04/GM_200gr_CartaWeb_Mar21.pdf","destination": "https://www.200gramos.com", "statusCode": 302 }
     
     
   ]
