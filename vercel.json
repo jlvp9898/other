@@ -7,7 +7,7 @@
     }
      { 
       "source": "/wp-content/uploads/2021/03/Carta-2021-corregido.pdf,
-      "destination": "/", 
+      "destination": "https://www.200gramos.com", 
       "statusCode": 302
     }
   ]
