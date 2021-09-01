@@ -48,18 +48,21 @@ useMemo(async () => {
                   <a>Contacto</a>
                 </Link>
               </p>
+              
               <p className="wow fadeInLeft">
               <select className="select-language" onChange={handleChange} value={lang}>
-              {_json.map(
+                <option value="ES">Español</option>
+              { /*_json.map(
                 ({ language, code, image}, j) => {
               
                   return (
                     <option value={code} key={j}>{language}</option>
                   );
                 }
-              )}
+              ) */}
               </select>
               </p>
+             
             </div>
             <div className="columns">
               <h3 className="wow fadeInUp">Legal</h3>
