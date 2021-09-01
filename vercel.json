@@ -1,9 +1,7 @@
 {
   "redirects": [
-    { 
-      "source": "/demo",
-      "destination": "https://www.mssistemas.es", 
-      "statusCode": 302
-    }
+    
+    { "source": "/demo", "destination": "www.mssistemas.es", "permanent": false },
+    
   ]
 }
