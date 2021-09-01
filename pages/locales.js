@@ -52,7 +52,7 @@ export default function Establecimientos() {
           </p>
           </div>
         </Banner>
-        <TitleRojoCenter title="RESERVA" />
+        <TitleRojoCenter title="200 GRAMOS" />
         <Reservas api={_json} urlBackPanel={api.urlBackPanel()} />
         <TitleRojoLeft
           title={_json.seccion_second.title }

@@ -45,7 +45,7 @@ useMemo(async () => {
               </p>
               <p className="wow fadeInLeft">
                 <Link href="/contacto">
-                  <a>Contácto</a>
+                  <a>Contacto</a>
                 </Link>
               </p>
               <p className="wow fadeInLeft">

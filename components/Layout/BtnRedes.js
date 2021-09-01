@@ -103,22 +103,22 @@ const BtnRedes = () => {
   }, []);
   return (
     <RedesNavI>
-      <a href={_json.facebook}>
+      <a href={_json.facebook} target="_blank">
         <div className="fb wow fadeInRight">
           <FaFacebookF />
         </div>
       </a>
-      <a href={_json.twitter}>
+      <a href={_json.twitter} target="_blank">
         <div className="tw wow fadeInRight">
           <FaTwitter />
         </div>
       </a>
-      <a href={_json.instagram}>
+      <a href={_json.instagram} target="_blank">
         <div className="it wow fadeInRight">
           <FaInstagram />
         </div>
       </a>
-      <a href={_json.whatsapp}>
+      <a href={_json.whatsapp} target="_blank">
         <div className="wa wow fadeInRight">
           <FaYoutube />
         </div>

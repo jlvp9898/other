@@ -60,7 +60,7 @@ const Slider_home = (props) => {
       },
     ],
   };
-  console.log(props.api.slider.galeria);
+
   if(!props.api.slider.galeria){
     return "";
   }
@@ -150,6 +150,7 @@ const Slider_home = (props) => {
 
           {props.api.slider.galeria.map(
             ({ title_menu, subtitle, image1, image }, j) => {
+             
               return (
                 <div className="slide">
                 <Image
@@ -163,7 +164,13 @@ const Slider_home = (props) => {
                   <p className="title-que-deseas">{title_menu}</p>
                   <h2>{subtitle}</h2>
                 </div>
-                <Link href={api.urlBackPanel()+image}>
+                <Link href={
+                  image.split(".")[image.split(".").length - 1] == 'jpeg'
+                  || image.split(".")[image.split(".").length - 1] == 'jpg'
+                  || image.split(".")[image.split(".").length - 1] == 'gif'
+                 || image.split(".")[image.split(".").length - 1] == 'png'
+                 || image.split(".")[image.split(".").length - 1] == 'pdf'
+                  ? api.urlBackPanel()+image : image}>
                   <a className="btn_mas btn-red" target="_blank">Ver más</a>
                 </Link>
               </div>
