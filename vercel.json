@@ -1,7 +1,7 @@
 {
   "redirects": [
     
-    { "source": "/demo", "destination": "www.mssistemas.es", "permanent": false },
+    { "source": "/demo1", "destination": "www.mssistemas.es", "permanent": false },
     
   ]
 }
