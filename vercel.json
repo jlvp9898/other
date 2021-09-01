@@ -3,7 +3,7 @@
     { 
       "source": "/demo2",
       "destination": "https://www.mssistemas.es", 
-      "statusCode": 301
+      "statusCode": 302
     }
   ]
 }
