@@ -5,5 +5,10 @@
       "destination": "https://www.mssistemas.es/AZOTEA2021MENU.pdf", 
       "statusCode": 302
     }
+     { 
+      "source": "/wp-content/uploads/2021/03/Carta-2021-corregido.pdf,
+      "destination": "/", 
+      "statusCode": 302
+    }
   ]
 }
