@@ -6,8 +6,8 @@
       "statusCode": 302 
     }
     { 
-      "source": "/wp-content/uploads/2021/01/GM_200gr_CartaComidasA5_Ene21.pdf",
-      "destination": "https://www.mssistemas.es/AZOTEA2021MENU.pdf", 
+      "source": "/wp-content/uploads/2021/03/Carta-2021-corregido.pdf",
+      "destination": "/", 
       "statusCode": 302 
     }
   ]
