@@ -6,7 +6,7 @@ import LineDoble from "../ui/LineDoble";
 import { GoMail } from "react-icons/go";
 import { FaPlayCircle } from "react-icons/fa";
 
-export const Video = () => {
+export const Video = (props) => {
   const [isOpen, setOpen] = useState(false);
 
   useEffect(() => {
@@ -30,33 +30,17 @@ export const Video = () => {
             channel="youtube"
             autoplay
             isOpen={isOpen}
-            videoId="TmJRFCsGIUE"
+            videoId={props.api.seccion_one.url_movie}
             onClose={() => setOpen(false)}
           />
         </div>
         <div className="text-equipo wow fadeInRight slow">
-          <h2>CRECE CON NUESTRA FAMILIA</h2>
-          <p>
-            Buscamos gente alegre, con ganas de aprender y mucho buen rollo.
-          </p>
-          <p>En constante evolución y pasión por hacer las cosas bien.</p>
-          <p>
-            Si quieres formar parte de nuestra gran familia y llevar el espíritu
-            200 Gramos contigo, te esperamos.
-          </p>
-          <p>
-            <strong>
-              Buscamos cocineros, camareros, bartenders y hostess.
-            </strong>
-          </p>
+          <h2>{props.api.seccion_one.title}</h2>
+         <div dangerouslySetInnerHTML={{__html: props.api.seccion_one.description}}></div>
           <p className="italica">
-            No es necesaria gran experiencia pero si una gran actitud.
-          </p>
-          <br />
-          <p className="italica">
-            <GoMail /> Envíanos tu CV a{" "}
-            <a href="mailto:empleo@grupomaridaje.com">
-              empleo@grupomaridaje.com
+            <GoMail /> {props.api.seccion_one.text_contact}{" "}
+            <a href={"mailto:"+props.api.seccion_one.email}>
+            {props.api.seccion_one.email}
             </a>
           </p>
         </div>

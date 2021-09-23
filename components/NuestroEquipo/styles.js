@@ -46,7 +46,6 @@ export default css`
     font-style: italic;
   }
   a {
-    color: #060606;
     text-decoration: underline;
   }
   a:hover {

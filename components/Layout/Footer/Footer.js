@@ -8,7 +8,7 @@ import Cookies from 'universal-cookie';
 const Footer = ({ theme }) => {
 
   const [_json, setJson] = useState(api.jsonApiLang);
-
+  const [_footer, setFooter] = useState(api.jsonApiFooter);
   const cookies = new Cookies();
 
   const lang = cookies.get('lang');
@@ -26,6 +26,14 @@ useMemo(async () => {
   fetch(api.urlApi("data_lang"), { method: "GET", headers })
     .then((response) => response.json())
     .then((data) => setJson(data));
+
+  
+    fetch(api.urlApi("data_footer&lang="+lang), { method: "GET", headers })
+    .then((response) => response.json())
+    .then((data) => setFooter(data));
+
+    console.log(_json);
+    
 }, []);
 
 
@@ -37,53 +45,54 @@ useMemo(async () => {
         <div className="container">
           <div className="grid">
             <div className="columns">
-              <h3 className="wow fadeInUp">Trabaja con nosotros</h3>
+              <h3 className="wow fadeInUp">{_footer.column_1}</h3>
               <p className="wow fadeInLeft">
                 <Link href="/te-unes-a-nuestro-equipo">
-                  <a>¿Te unes al equipo?</a>
+                  <a>{_footer.coumn_1_items[0]}</a>
                 </Link>
               </p>
               <p className="wow fadeInLeft">
                 <Link href="/contacto">
-                  <a>Contacto</a>
+                  <a>{_footer.coumn_1_items[1]}</a>
                 </Link>
               </p>
               
               <p className="wow fadeInLeft">
               <select className="select-language" onChange={handleChange} value={lang}>
-                <option value="ES">Español</option>
-              { /*_json.map(
-                ({ language, code, image}, j) => {
+               
+              { _json.map(
+                ({ language, code, enable_language}, j) => {
               
                   return (
-                    <option value={code} key={j}>{language}</option>
+                    
+                    enable_language == true ? <option value={code} key={j}>{language}</option> : ""
                   );
                 }
-              ) */}
+              ) }
               </select>
               </p>
              
             </div>
             <div className="columns">
-              <h3 className="wow fadeInUp">Legal</h3>
+              <h3 className="wow fadeInUp">{_footer.column_2}</h3>
               <p className="wow fadeInLeft">
                 <Link href="/terminos-condiciones">
-                  <a>Términos y condiciones</a>
+                  <a>{_footer.coumn_2_items[0]}</a>
                 </Link>
               </p>
               <p className="wow fadeInLeft">
                 <Link href="/politica-cookies">
-                  <a>Política de cookies</a>
+                  <a>{_footer.coumn_2_items[1]}</a>
                 </Link>
               </p>
               <p className="wow fadeInLeft">
                 <Link href="/aviso-legal">
-                  <a>Aviso legal</a>
+                  <a>{_footer.coumn_2_items[2]}</a>
                 </Link>
               </p>
             </div>
             <div className="columns">
-              <h3 className="wow fadeInUp">Síguenos</h3>
+              <h3 className="wow fadeInUp">{_footer.column_3}</h3>
               <BtnRedes />
             </div>
           </div>
@@ -93,7 +102,7 @@ useMemo(async () => {
           <div className="container">
             <small>
               <p className="wow fadeInUp">
-                &copy;2021 200GRAMOS - Todos los derechos reservados
+              {_footer.copyright}
               </p>
             </small>
           </div>

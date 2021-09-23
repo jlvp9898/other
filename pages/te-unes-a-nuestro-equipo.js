@@ -16,7 +16,7 @@ export default function NuestroEquipo() {
     const headers = api.head();
     const cookies = new Cookies();
     const lang = cookies.get('lang');
-    fetch(api.urlApi("data_home&lang="+lang), { method: 'GET', headers})
+    fetch(api.urlApi("data_join&lang="+lang), { method: 'GET', headers})
     .then(response => response.json())
     .then(data => setJson(data));
 
@@ -24,31 +24,30 @@ export default function NuestroEquipo() {
   return (
     <>
       <Head>
-        <title>Unete a nuestro equipo</title>
+        <title>{_json.title_page}</title>
       </Head>
       <style jsx>{style}</style>
       <Layout bg="/static/img/fondos/nuestro-equipo.jpg">
         <Banner alto={false}>
         <div className="d-block">
           <h1 className="border-text title-banner wow fadeInUp">
-        ¿Te unes a nuestro equipo?
+          {_json.slider.title}
         </h1>
           </div>
           <div className="d-block">
           <p className="wow fadeInUp border-text">
-          Ninguno de nosotros es tan bueno como todos <br />
-            nosotros juntos
+          {_json.slider.subtitle}
           </p>
           </div>
        
         </Banner>
-        <Video />
+        <Video  api={_json}  />
         <TitleRojoLeft
           title="SIGUENOS"
           url="https://www.instagram.com/200gramos"
           nickname="@INSTAGRAM"
         />
-        <Galery api={_json} urlBackPanel={api.urlBackPanel()} />
+        <Galery  />
       </Layout>
     </>
   );

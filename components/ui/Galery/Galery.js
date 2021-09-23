@@ -5,7 +5,7 @@ import api from ".../../../api/api";
 
 
 
-const Galery = (props) => {
+const Galery = () => {
 
   
   const [insta, setInsta] = useState(api.jsonApiInstagram);

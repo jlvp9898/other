@@ -2,31 +2,36 @@ import React from 'react';
 import LineDoble from '../../ui/LineDoble';
 import style from "./style";
 
-export const Formulario = () => {
+export const Formulario = (props) => {
   return (
     <>
       <style jsx>{style}</style>
       <LineDoble />
-      <h1 className="title-formulario wow fadeInRight">FORMULARIO PARA DUDAS Y PREGUNTAS</h1>
+      <h1 className="title-formulario wow fadeInRight">{props.api.form_title}</h1>
       <form className="form-contacto">
         <div className="form-name">
           <input
             type="text"
             className="form-control"
-            placeholder="Nombre"
+            placeholder={props.api.form_name}
           />
         </div>
         <div className="form-email">
           <input
             type="email"
             className="form-control"
-            placeholder="E-mail"
+            placeholder={props.api.form_email}
           />
         </div>
         <select className="form-select" aria-label="Default select example">
-          <option value="1">Asunto</option>
-          <option value="2">Asunto</option>
-          <option value="3">Asunto</option>
+        { props.api.content_menu.map(
+                ({ title_menu}, j) => {
+              
+                  return (
+                    <option value={title_menu} key={j}>{title_menu}</option>
+                  );
+                }
+              ) }
         </select>
         <div className="form-textarea">
           <textarea className="form-control" rows="5"></textarea>

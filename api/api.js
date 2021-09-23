@@ -179,6 +179,14 @@ const jsonApiContact = () => {
                 "subtitle": "",
                 "img": ""
             },
+            "form": {
+                "form_title": "FORMULARIO PARA DUDAS Y PREGUNTAS",
+                "form_name": "Nombre",
+                "form_email": "E-mail",
+                "content_menu": [{
+                    "title_menu": ""
+                }]
+            },
             "seccion_one": {
                 "banner_one": {
                     "header": "",
@@ -443,12 +451,8 @@ const jsonApiLang= () => {
         [{
             "language":"Español",
             "code":"ES",
-            "image":"url"
-        },
-        {
-            "language":"Español",
-            "code":"ES",
-            "image":"url"
+            "image":"url",
+            "enable_language" : true
         }]
     );
 };
@@ -533,7 +537,54 @@ const jsonApiInstagram= () => {
          }
     );
 };
-export default {head , urlApi, jsonApiHome, jsonApiLang, jsonApiLocale, jsonApiContact, jsonApiLegalWarning, jsonApiTerms, jsonApiCookies, urlBackPanel, jsonApiRedes, jsonMenus, jsonApiInstagram};
+
+
+
+const jsonApiHeader = () => {
+    return ({
+        "list_1": "",
+        "list_2": "",
+        "menus": ["", "", "", "", "", "", "", "", ""],
+        "list_3": "",
+        "list_4": "",
+        "btn_rsv": "",
+        "time_update": "16-09-21"
+    });
+};
+
+const jsonApiFooter = () => {
+    return ({
+        "column_1": "",
+        "coumn_1_items": ["", ""],
+        "column_2": "",
+        "coumn_2_items": ["", "", ""],
+        "column_3": "",
+        "copyright": "",
+        "time_update": "16-09-21"
+    });
+};
+
+const jsonApiJoin = () => {
+    return ({
+        "title_page": "",
+        "description": "",
+        "time_update": "",
+        "slider": {
+            "title": "",
+            "subtitle": ""
+        },
+        
+        "seccion_one": {
+            "title": "",
+            "url_movie": "TmJRFCsGIUE",
+            "description": "",
+            "text_contact ": "",
+            "email ": " "
+        }
+    });
+};
+
+export default {head , urlApi, jsonApiFooter, jsonApiJoin, jsonApiHome, jsonApiHeader, jsonApiLang, jsonApiLocale, jsonApiContact, jsonApiLegalWarning, jsonApiTerms, jsonApiCookies, urlBackPanel, jsonApiRedes, jsonMenus, jsonApiInstagram};
 
 
 

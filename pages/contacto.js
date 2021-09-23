@@ -42,8 +42,8 @@ export default function Contacto() {
           </p>
           </div>
         </Banner>
-        <Formulario />
-        <TitleRojoCenter title="Nuestras sedes" />
+        <Formulario api={_json.form} />
+        <TitleRojoCenter title={_json.seccion_one.banner_one.title } />
         <Mapas
           position="right"
           lat="27.767775649069748"
