@@ -31,9 +31,6 @@ useMemo(async () => {
     fetch(api.urlApi("data_footer&lang="+lang), { method: "GET", headers })
     .then((response) => response.json())
     .then((data) => setFooter(data));
-
-    console.log(_json);
-    
 }, []);
 
 
@@ -57,7 +54,7 @@ useMemo(async () => {
                 </Link>
               </p>
               
-              
+
               <p className="wow fadeInLeft">
               <select className="select-language" onChange={handleChange} value={lang}>
                
