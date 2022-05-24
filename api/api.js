@@ -9,14 +9,14 @@ const head = () => {
 
 const urlApi = (data) => {
     return (
-        "https://gorros.net/200gramos/api?"+data
+        "http://delorean.billregulator.com/api?"+data
       );
       
   };
 
   const urlBackPanel = () => {
     return (
-        "https://gorros.net/200gramos/"
+        "http://delorean.billregulator.com/"
       );
       
   };
