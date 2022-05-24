@@ -9,14 +9,14 @@ const head = () => {
 
 const urlApi = (data) => {
     return (
-        "http://delorean.billregulator.com/api?"+data
+        "https://delorean.billregulator.com/api?"+data
       );
       
   };
 
   const urlBackPanel = () => {
     return (
-        "http://delorean.billregulator.com/"
+        "https://delorean.billregulator.com/"
       );
       
   };
